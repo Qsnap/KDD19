@@ -1,7 +1,5 @@
 This repository includes matlab code, scripts, and datasets necessary for reproducing results presented in our KDD submission.
 Data for the property tax experiments could not be provided, as the data requires a legal aggreement with Zillow to access.
-We include the simulation data used in our experiments for dataset sizes 5000x3 and 5000x5.  The 5000x10 simulation sets were too large to
-upload to github.
 The simulation code used to create out datasets is also provided.
 
 
@@ -17,8 +15,7 @@ t = SpaceTimeTiming(1000,3);
 ***Reproducing Simulation Experiments from 4.2***
 batch_time_sim.m is the main method for this analysis.
 It loads batches of simulation data (saved as csv files) and runs Qsnap, TESS, and SSS-Moods on them.
-The simulation data must already be prepared in order to run this file.  We've included the simulation datasets we used for P=3 and 5.  
-The P=10 datasets were too large to upload to github.
+The simulation data must already be prepared in order to run this file.  We've included the simulation datasets we used for the paper.
 
 Example use:
 batch_time_sim(5000,3,1000,.1,"Exp");
